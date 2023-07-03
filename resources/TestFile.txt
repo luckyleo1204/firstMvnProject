@@ -1,0 +1,9 @@
+What you'll learn
+BASIC --> Advance --> Expert Level knowledge of JAVA PROGRAMMING FROM TESTERS point of view and its implement in Automation
+Expertise on Selenium WebDriver Basics + Advance concepts with Practical implementation to become Job Ready
+Confident to Automate Web Application using Selenium WebDriver and Java + Best Practices as per Industry Standards
+Can automation any REALTIME application and be able to design FRAMEWORKS from scratch
+Details understanding of advance concepts like OOPS, Excel Handling, DB Handling etc
+Detailed knowledge of supporting Tools and Libraries like MAVEN, JUNIT, TestNG, Cucumber
+Regularly updated latest Interview Questions & Programming Exercise with Solution
+Framework Implementation from scratch : Data driven framework, BDD Framework using Cucumber

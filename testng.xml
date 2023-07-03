@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite" verbose="1">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="remoteRun" value="false"/>
+
+    <test name="Regression1" preserve-order="false">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+                <exclude name="Sanity"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.mtestproject.selenium"/>
+        </packages>
+<!--        <classes>-->
+<!--            <class name="com.mtestproject.selenium.firstSelenium">-->
+<!--                <methods>-->
+<!--                    <include name="flipkartSearch"/>-->
+<!--                    <include name="validateLinkStatus"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.mtestproject.selenium.SecondSelenium">-->
+<!--                <methods>-->
+<!--                    <include name="test1"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+    </test>
+</suite>
