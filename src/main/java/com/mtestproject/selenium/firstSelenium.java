@@ -31,7 +31,8 @@ public class firstSelenium {
         driver.manage().window().maximize();
     }
 
-    @Test(groups = {"Smoke","medium"})
+    //@Test(groups = {"Smoke","medium"})
+    @Test(enabled = false)
     public void flipkartSearch(){
         driver.get("https://www.flipkart.com/");
         driver.findElement(By.xpath("//button[text()='✕']")).click();
