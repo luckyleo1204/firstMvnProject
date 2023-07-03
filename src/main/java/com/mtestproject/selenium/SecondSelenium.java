@@ -13,7 +13,7 @@ public class SecondSelenium {
 
     @BeforeMethod(alwaysRun = true)
     public void init(){
-        System.setProperty("webdriver.chrome.driver","C:\\Softwares\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver=new ChromeDriver(options);
