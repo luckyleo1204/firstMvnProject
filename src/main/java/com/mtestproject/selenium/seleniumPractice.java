@@ -32,6 +32,18 @@ public class seleniumPractice {
         printCourseName("AI");
         }
 
+        @Test
+        public void getSearchResult(){
+            driver.get("https://www.google.com/");
+            driver.findElement(By.name("q")).sendKeys("Selenium");
+                driver.manage().timeouts().pageLoadTimeout(Duration.ofMillis(25000));
+            List<WebElement> al=driver.findElements(By.xpath("(//ul[@role=\"listbox\"])[1]/li"));
+            System.out.println(al.size());
+            for(int i=1;i<al.size();i++){
+                String txt=driver.findElement(By.xpath("(//ul[@role=\"listbox\"])[1]/li["+i+"]/div/div[2]/div[1]")).getAttribute("aria-label");
+                System.out.println(txt);
+            }
+        }
     public void printCourseName(String courseType){
         List<WebElement> al =driver.findElements(By.xpath("//h4/b[text()='"+courseType+"']//parent::h4//following-sibling::ul[1]/li"));
         System.out.println(al.size());
