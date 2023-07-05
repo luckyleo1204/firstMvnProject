@@ -1,5 +1,6 @@
 package com.mtestproject.selenium;
 
+import com.mtestproject.selenium.Base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,18 +14,8 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class seleniumPractice {
+public class seleniumPractice extends BaseTest {
 
-    WebDriver driver;
-
-    @BeforeMethod(alwaysRun = true)
-    public void init(){
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
-        ChromeOptions options=new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        driver=new ChromeDriver(options);
-        driver.manage().window().maximize();
-    }
 
     @Test(groups = {"Smoke","medium"})
     public void gurucourses() throws InterruptedException {
@@ -53,8 +44,5 @@ public class seleniumPractice {
 
 
 
-    @AfterMethod(alwaysRun = true)
-    public void teardown(){
-        driver.close();
-    }
+
 }
