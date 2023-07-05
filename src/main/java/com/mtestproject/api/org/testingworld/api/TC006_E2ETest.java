@@ -16,6 +16,7 @@ public class TC006_E2ETest {
         RequestSpecification rs = RestAssured.given();
         rs.header("Content-Type", "application/json");
         rs.body("{\"id\": 1,\"first_name\": \"Murali\",\"middle_name\": \"C \",\"last_name\": \"veera\",\"date_of_birth\": \"12/04/1978\"}");
+        rs.log().all(); // Check what is passed along with request
         Response respone = rs.post(Baseurl + "studentsDetails");
         System.out.println(respone.asPrettyString());
         Assert.assertEquals(respone.getStatusCode(), 201);
