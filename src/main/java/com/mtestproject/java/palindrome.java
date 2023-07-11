@@ -6,18 +6,18 @@ public class palindrome {
         char[] c=s.toCharArray();
         int start=0;
         int end=s.length()-1;
-        boolean isprime=true;
+        boolean ispal=true;
 
         while(start<end){
             if(c[start]==c[end]){
                 start++; end--;
             }else{
-                isprime=false;
+                ispal=false;
                 break;
             }
         }
 
-        if(isprime==true)
+        if(ispal==true)
             System.out.println("Given String is pal");
         else
             System.out.println("given string is not pal");

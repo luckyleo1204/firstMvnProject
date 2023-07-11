@@ -20,5 +20,6 @@ public class methodsDemo {
        // list2.stream().filter(e->e.);
 
 
+
     }
 }
